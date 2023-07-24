@@ -1,0 +1,30 @@
+:root {
+  --background-color: #fff;
+  --color: #000;
+  --orange: orange;
+}
+
+:root[data-theme="light"] {
+  --background-color: #fff;
+  --color: #000;
+  --orange: orange;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #000;
+  --color: #fff;
+  --orange: #ff8000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+.btn {
+  background-color: var(--orange);
+  color: var(--color) !important;
+  border: 0;
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+}
